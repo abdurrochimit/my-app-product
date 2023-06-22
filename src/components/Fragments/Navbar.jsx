@@ -1,4 +1,5 @@
-import { Link, Outlet } from "react-router-dom";
+import React from 'react';
+import { Link } from "react-router-dom";
 
 const NavbarPage = () => {
     return (
@@ -6,16 +7,16 @@ const NavbarPage = () => {
 
             <h1 className="text-xl font-bold text-white  cursor-pointer">
                 Logo
-            </h1> 
+            </h1>
             <ul className="flex space-x-6">
                 <li className="text-sm font-bold text-white cursor-pointer">
-                   <a href="/">Home</a> 
+                    <Link to={`/`}>Home </Link>
                 </li>
                 <li className="text-sm font-bold text-white cursor-pointer">
-                <a href="/contact">Contact</a> 
+                    <Link to={`/contact`}>Contact </Link>
                 </li>
                 <li className="text-sm font-bold text-white cursor-pointer">
-                <a href="/profil">Profile</a> 
+                    <Link to={`/profil`}>Profil </Link>
                 </li>
             </ul>
         </div>
